@@ -122,6 +122,9 @@ def downloadFromUrlAndPath2(urls,path):
 		print " "
 
 def prepareFromUrlAndPath(urlList,path, mulDes):
+	if mulDes < 1:
+		printc("selecciona una cantidad de descargas", col.YELLOW)
+		return
 	r = requests.get(urlList)
 	m3u_master = m3u8.loads(r.text)
 	errorsDownloadList.clear()
@@ -136,7 +139,13 @@ def prepareFromUrlAndPath(urlList,path, mulDes):
 	urlsToSend.clear()
 	printc("Enviando Bloques para descarga", col.YELLOW)
 	for index, x in enumerate(urls):
-		if (index+1)%mulDes == 0 and urlsToSend:
+		if mulDes == 1:
+			printx(str(index) + ': '+ x)
+			urlsToSend[x] = urls[x]
+			printx('Enviado para descarga', col.BOLD)
+			downloadFromUrlAndPath2(urlsToSend,path)
+			urlsToSend.clear()
+		elif (index+1)%mulDes == 0 and urlsToSend:
 			printx(str(index) + ': '+ x)
 			urlsToSend[x] = urls[x] 
 			printx('Enviado para descarga', col.BOLD)
