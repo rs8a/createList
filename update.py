@@ -3,9 +3,9 @@
 import os, shutil, wget
 
 rsMainPath = "/home/geshtue"
-rsURL = "https://geshtue.com/parser.py"
-rsUpdateURL = "https://geshtue.com/update.py"
-rsInstallerURL = "https://geshtue.com/installParser.py"
+rsURL = "https://raw.githubusercontent.com/rs8a/createList/master/parser.py"
+rsUpdateURL = "https://github.com/rs8a/createList/edit/master/update.py"
+rsInstallerURL = "https://raw.githubusercontent.com/rs8a/createList/master/installParser.py"
 
 scriptVersion = '1.0.2'
 class col:
