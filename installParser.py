@@ -4,8 +4,8 @@ import os, shutil
 
 rsMainPath = "/home/geshtue"
 rsURL = "https://raw.githubusercontent.com/rs8a/createList/master/parser.py"
-rsUpdateURL = "https://github.com/rs8a/createList/edit/master/update.py"
-scriptVersion = '1.0.1'
+rsUpdateURL = "https://raw.githubusercontent.com/rs8a/createList/master/update.py"
+scriptVersion = '1.0.2'
 class col:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
