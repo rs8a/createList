@@ -9,7 +9,7 @@ import shutil
 import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
-scriptVersion = '1.1.1'
+scriptVersion = '1.1.2'
 errorsDownloadList = { "dd" : "dd" }
 errorsToMove = { "dd" : "dd" }
 class col:
@@ -123,7 +123,7 @@ def downloadFromUrlAndPath2(urls,path):
 
 def prepareFromUrlAndPath(urlList,path, mulDes):
 	if mulDes < 1:
-		printc("selecciona una cantidad de descargas", col.YELLOW)
+		printc("Tu cantidad de descargas era 0 o menos y eso da un error", col.YELLOW)
 		return
 	r = requests.get(urlList)
 	m3u_master = m3u8.loads(r.text)
