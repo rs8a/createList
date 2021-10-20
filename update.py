@@ -7,7 +7,7 @@ rsURL = "https://raw.githubusercontent.com/rs8a/createList/master/parser.py"
 rsUpdateURL = "https://raw.githubusercontent.com/rs8a/createList/master/update.py"
 rsInstallerURL = "https://raw.githubusercontent.com/rs8a/createList/master/installParser.py"
 
-scriptVersion = '1.0.2'
+scriptVersion = '1.0.3'
 class col:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
