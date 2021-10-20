@@ -3,8 +3,8 @@
 import os, shutil
 
 rsMainPath = "/home/geshtue"
-rsURL = "https://geshtue.com/parser.py"
-rsUpdateURL = "https://geshtue.com/update.py"
+rsURL = "https://raw.githubusercontent.com/rs8a/createList/master/parser.py"
+rsUpdateURL = "https://github.com/rs8a/createList/edit/master/update.py"
 scriptVersion = '1.0.1'
 class col:
     HEADER = '\033[95m'
