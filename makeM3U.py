@@ -36,6 +36,7 @@ flist = os.listdir('.')
 for mfile in flist:
     if (mfile.endswith(".txt") != True) and (mfile.endswith(".py") != True):
         result.append(mfile)
+result.sort()
 with open(preffix+".m3u", "w") as txt_file:
     txt_file.write("#EXTM3U" + "\n")
     for mfile in result:
